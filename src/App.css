@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
+.app {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #121212;
+  color: white;
+  flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (min-width: 1024px) {
+  .app {
+    flex-direction: row;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sidebar {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  background-color: #181818;
+  padding: 20px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  left: -100%;
+  top: 0;
+  height: 100vh;
+  transition: left 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+@media (min-width: 1024px) {
+  .sidebar {
+    position: relative;
+    left: 0;
+    width: 250px;
+  }
+}
+
+.hamburger {
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+@media (min-width: 1024px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  overflow-y: auto;
+  margin-top: 60px;
+}
+
+@media (min-width: 1024px) {
+  .content {
+    flex-direction: row;
+    margin-top: 0;
+  }
+}
+
+.music-player {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+  transition: background 0.5s ease-in-out;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(20, 20, 20, 0.9));
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 1024px) {
+  .music-player {
+    max-width: none;
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 768px) {
+  .music-player {
+    width: 100%;
+    max-width: none;
+    border-radius: 0;
+    padding: 15px;
+  }
+}
+
+.songlist {
+  background: #1a1a1a;
+  padding: 20px;
+  flex: 1;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  width: 100%;
+  max-width: 400px;
+}
+
+@media (max-width: 768px) {
+  .songlist {
+    max-width: none;
   }
 }

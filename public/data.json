@@ -1,0 +1,59 @@
+[
+    {
+      "title": "Starboy",
+      "artistName": "The Weeknd",
+      "duration": "4:16",
+      "thumbnail": "/images/starboy.jpeg",
+      "musicUrl": "/music/Starboy.m4a"
+    },
+    {
+      "title": "Demons",
+      "artistName": "Imagine Dragons",
+      "duration": "3:32",
+      "thumbnail": "/images/demons.jpeg",
+      "musicUrl": "/music/Demons.m4a"
+    },
+    {
+      "title": "Viva La Vida",
+      "artistName": "Coldplay",
+      "duration": "4:02",
+      "thumbnail": "/images/vivalavida.jpeg",
+      "musicUrl": "/music/Vivalavida.m4a"
+    },
+    {
+      "title": "Ghost Stores",
+      "artistName": "Coldplay",
+      "duration": "3:10",
+      "thumbnail": "/images/ghoststories.jpg",
+      "musicUrl": "/music/Ghoststories.m4a"
+    },
+    {
+      "title": "Sparks",
+      "artistName": "Coldplay",
+      "duration": "4:23",
+      "thumbnail": "/images/sparks.jpeg",
+      "musicUrl": "/music/sparks.m4a"
+    },
+    {
+      "title": "Hymm for the weekend",
+      "artistName": "Coldplay",
+      "duration": "2:23",
+      "thumbnail": "/images/hymmfortheweekend.jpg",
+      "musicUrl": "/music/Hymmfortheweekend.m4a"
+    },
+    {
+      "title": "Mouth of the river",
+      "artistName": "Imagine Dragons",
+      "duration": "6:23",
+      "thumbnail": "/images/mouthoftheriver.jpeg",
+      "musicUrl": "/music/Mouthoftheriver.m4a"
+    },
+    {
+      "title": "Pain",
+      "artistName": "Ryan Jones",
+      "duration": "3:12",
+      "thumbnail": "/images/pain.jpeg",
+      "musicUrl": "/music/pain.m4a"
+    }
+  ]
+  

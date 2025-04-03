@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import Sidebar from "./components/Sidebar";
+import SongList from "./components/Songs";
+import MusicPlayer from "./components/Player";
 
-function App() {
+const App = () => {
+  const [currentSong, setCurrentSong] = useState(null);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Sidebar />
+      <div className="content">
+      <SongList setCurrentSong={setCurrentSong} />
+      {currentSong && <MusicPlayer song={currentSong} />}
+    </div>
     </div>
   );
-}
+};
 
 export default App;
